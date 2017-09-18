@@ -6,7 +6,7 @@ set -e
 
 # debug
 if [ "${SHELL_DEBUG}" != "" ]; then
-  set -x
+  set -x;
 fi
 
 # clean up leaking environment
