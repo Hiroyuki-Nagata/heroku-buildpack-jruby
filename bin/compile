@@ -5,7 +5,9 @@
 set -e
 
 # debug
-set -x
+if [ "${SHELL_DEBUG}" != "" ]; then
+  set -x
+fi
 
 # clean up leaking environment
 unset GIT_DIR
